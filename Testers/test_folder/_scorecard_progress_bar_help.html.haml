@@ -1,0 +1,11 @@
+
+#homepage_scoretips.visually-hidden
+  .popup-body.homepage-scoretips
+    = image_tag(path_to_localized_image('homepage_scoretips.png'))
+    %h4.arrange
+      %span.arrange-fit
+        %span.icon-scorable.icon-fallback-img{aria: {label: I18n.t('icon_fallback.scorable')}}
+      %span.arrange-fill
+        = t('.scorecard_improvement_tips')
+    %p= raw t('.follow_tips_message', link: t('.follow_tips_link'))
+    %p= raw t('.help_text_message', link: t('.help_text_link'))
