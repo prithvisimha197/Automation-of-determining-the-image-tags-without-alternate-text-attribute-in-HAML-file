@@ -1,0 +1,16 @@
+=img
+=  img 
+%img{:src => "loading.png",:alt=>"alternative"}
+= img "watermark.png"
+=image_tag "loading.gif"
+<%= image_tag( 'image_name.png', style: 'height: 25px; width: 200px; position: absolute' ) %>
+<%=link_to image_tag("Search.png", :border=>0), :action =>'search', :controller => 'pages', :class => 'dock-item' %>
+= image_tag(@user.image.url, class:"img-responsive img-circle",style:"width:150px;height:150px;margin:auto;")
+<%= link_to root_path do %><%= image_tag("Search.png",:alt=>'Vivek',:title=>'Vivek',:class=>'dock-item')%><%= content_tag(:span, "Search").html_safe%><% end %>
+%img{:src => "car.png", :alt => " "}
+%img{:src => "car.png", :alt => ""}
+ image_tag
+#image_tag
+.image_tag
+"image_tag
+@image_tag
